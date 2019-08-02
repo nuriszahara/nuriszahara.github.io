@@ -9,6 +9,11 @@
 	</title>
 	<meta name="description" content="Madame's Cacti and Succulents menjual berbagai jenis kaktus dan sukulen yang berlokasi di Kota Banda Aceh">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<!--Start CSS-->
 	<link rel="stylesheet" href="styles/styles.css">
 	<!--End CSS-->
@@ -16,27 +21,38 @@
 	<!--Start JS-->
 	<script src="js/function.js"></script>
 	<!--End JS-->
+
+	<!-- WhatsHelp.io widget -->
+	<script type="text/javascript">
+		(function () {
+			var options = {
+				whatsapp: "+6282364299285", // WhatsApp number
+				call_to_action: "Message us", // Call to action
+				position: "right", // Position may be 'right' or 'left'
+			};
+			var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+			var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+			s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+			var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+		})();
+	</script>
+	<!-- /WhatsHelp.io widget -->
 </head>
 <body>
-	<!--Start Logo-->
-	<div class="container logo">
-		<a href="index.html" title="Logo Madame's Cacti and Succlents">
-		<img src="image/logo-cacty-dua.png" alt="Gambar Logo" width="450">
-	</a>
-	</div>
-	<!--End Logo-->
-
 	<!--Start Menu Primer-->
 	<div class="container menu-primer">
 		<ul>
 			<li>
+				<img class="logo1" src="image/logo-cacty.png" alt="Gambar Logo" title="Gambar Logo" width="150">
+			</li>
+			<li>
 				<a href="index.html" title="Home">Home</a>
 			</li>
 			<li>
-				<a href="register-login.html" title="Register/Log In">Register/Log In</a>
+				<a href="produk.html" title="Products" class="active">Products</a>
 			</li>
 			<li>
-				<a href="produk.html" title="Product" class="active">Product</a>
+				<a href="register-login.html" title="Register/Log In">Register/Log In</a>
 			</li>
 			<li>
 				<a href="pembayaran.html" title="Payment">Payment</a>
@@ -47,144 +63,75 @@
 			<li>
 				<a href="tentang-kami.html" title="About Us">About Us</a>
 			</li>
+			<a href="#">
+				<span class="glyphicon glyphicon-shopping-cart"></span>
+			</a>
 		</ul>
 	</div>
 	<!--End Menu Primer-->
 
-	<!--Start Jumbotron-->
-	<!-- <div class="container jumbotron">
-		<h1>Product</h1>
-		<h3>Madame's Cacti and Succulents menyediakan berbagai jenis kaktus dan sukulen yang berpusat di Banda Aceh dan siap dikirimkan ke seluruh Indonesia.</h3>
-	</div> -->
-	<!--End Jumbotron-->
-
 	<!--Start Produk-->
 	<div class="container">
 		<div class="box-heading">
-			<h4><a href="index.html" title="Home">Home</a>> Product
-			</h4>	
+			<h3><a href="index.html" title="Home">Home</a>> Product
+			</h3>	
 		</div>
 
-		<figure class="snip1583">
-			<img src="image/satu.jpg" alt="cactus-one" />
-			<div class="icons">
-				<a><i class="ion-android-cart"></i></a>
-				<a><i class="ion-android-star"></i></a>
-				<a><i class="ion-android-share-alt"></i></a>
-			</div>
-			<figcaption>
-				<h3>Cactus One</h3>
-				<div class="price">IDR 75K</div>
-			</figcaption>
-		</figure>
-
-		<figure class="snip1583 hover">
-		<img src="image/dua.jpg" alt="cactus-two" />
-			<div class="icons">
-				<a><i class="ion-android-cart"></i></a>
-				<a><i class="ion-android-star"></i></a>
-				<a><i class="ion-android-share-alt"></i></a>
-			</div>
-			<figcaption>
-				<h3>Cactus Two</h3>
-				<div class="price">IDR 55K</div>
-			</figcaption>
-		</figure>
-
-		<figure class="snip1583">
-		<img src="image/tiga.jpg" alt="cactus-three" />
-			<div class="icons">
-				<a><i class="ion-android-cart"></i></a>
-				<a><i class="ion-android-star"></i></a>
-				<a><i class="ion-android-share-alt"></i></a>
-			</div>
-			<figcaption>
-				<h3>Cactus Three</h3>
-				<div class="price">IDR 65K</div>
-			</figcaption>
-		</figure>
-
-		<figure class="snip1583">
-			<img src="image/empat.jpg" alt="cactus-four" />
-				<div class="icons">
-					<a><i class="ion-android-cart"></i></a>
-					<a><i class="ion-android-star"></i></a>
-					<a><i class="ion-android-share-alt"></i></a>
-				</div>
-				<figcaption>
-					<h3>Cactus Four</h3>
-					<div class="price">IDR 70K</div>
-				</figcaption>
-			</figure>
-		<!-- <div class="main-home-four">
-			<div class="box-isi">
-				<a href="index.html" title="Kaktus Satu">
-				<img src="image/satu.jpg" alt="Kaktus Satu" width="240">
-			</div>
+		<div class="card">
+				<img src="image/satu.jpg" alt="Cactus One" title="Cactus One" style="width:100%">
+				<h2>Cactus One</h2>
+				<p class="price">IDR 75K</p>
+				<p><button>Add to Cart</button></p>
 		</div>
 
-		<div class="main-home-four">
-			<div class="box-isi">
-				<a href="index.html" title="Kaktus Dua">
-				<img src="image/dua.jpg" alt="Kaktus Dua" width="267">
-			</div>
+		<div class="card">
+				<img src="image/dua.jpg" alt="Cactus Two" title="Cactus Two" style="width:100%">
+				<h2>Cactus Two</h2>
+				<p class="price">IDR 55K</p>
+				<p><button>Add to Cart</button></p>
 		</div>
 
-		<div class="main-home-four">
-			<div class="box-isi">
-				<a href="index.html" title="Kaktus Tiga">
-				<img src="image/tiga.jpg" alt="Kaktus Tiga" width="226">
-			</div>
+		<div class="card">
+				<img src="image/tiga.jpg" alt="Cactus Three" title="Cactus Three" style="width:100%">
+				<h2>Cactus Three</h2>
+				<p class="price">IDR 65K</p>
+				<p><button>Add to Cart</button></p>
 		</div>
 
-		<div class="main-home-four">
-			<div class="box-isi">
-				<a href="index.html" title="Kaktus Empat">
-				<img src="image/empat.jpg" alt="Kaktus Empat" width="242">
-			</div>
+		<div class="card">
+				<img src="image/empat.jpg" alt="Cactus Four" title="Cactus Four" style="width:100%">
+				<h2>Cactus Four</h2>
+				<p class="price">IDR 70K</p>
+				<p><button>Add to Cart</button></p>
 		</div>
 
-		<div class="main-home-five">
-			<div class="box-isi">
-				<a href="index.html" title="Paket Satu">
-				<img src="image/paket-kaktus-satu.jpg" alt="Paket Satu" width="555">
-			</div>
-		</div>
-	
-		<div class="main-home-five">
-			<div class="box-isi">
-				<a href="index.html" title="Paket Dua">
-				<img src="image/paket-kaktus-dua.jpg" alt="Paket Dua" width="543">
-			</div>
+		<div class="card">
+				<img src="image/lima.jpg" alt="Cactus Five" title="Cactus Five" style="width:100%">
+				<h2>Cactus Five</h2>
+				<p class="price">IDR 40K</p>
+				<p><button>Add to Cart</button></p>
 		</div>
 
-		<div class="main-home-four">
-			<div class="box-isi">
-				<a href="index.html" title="Kaktus Lima">
-				<img src="image/lima.jpg" alt="Kaktus Lima" width="220">
-			</div>
+		<div class="card">
+				<img src="image/enam.jpg" alt="Cactus Six" title="Cactus Six" style="width:100%">
+				<h2>Cactus Six</h2>
+				<p class="price">IDR 45K</p>
+				<p><button>Add to Cart</button></p>
 		</div>
 
-		<div class="main-home-four">
-			<div class="box-isi">
-				<a href="index.html" title="Kaktus Enam">
-				<img src="image/enam.jpg" alt="Kaktus Enam" width="233">
-			</div>
+		<div class="card">
+				<img src="image/tujuh.jpg" alt="Cactus Seven" title="Cactus Seven" style="width:100%">
+				<h2>Cactus Seven</h2>
+				<p class="price">IDR 45K</p>
+				<p><button>Add to Cart</button></p>
 		</div>
 
-		<div class="main-home-four">
-			<div class="box-isi">
-				<a href="index.html" title="Kaktus Tujuh">
-				<img src="image/tujuh.jpg" alt="Kaktus Tujuh" width="247">
-			</div>
+		<div class="card">
+				<img src="image/delapan.jpg" alt="Cactus Eight" title="Cactus Eight" style="width:100%">
+				<h2>Cactus Eight</h2>
+				<p class="price">IDR 45K</p>
+				<p><button>Add to Cart</button></p>
 		</div>
-
-		<div class="main-home-four">
-			<div class="box-isi">
-				<a href="index.html" title="Kaktus Delapan">
-				<img src="image/delapan.jpg" alt="Kaktus Delapan" width="235">
-			</div>
-		</div> -->
 	</div>
 	<!--End Produk-->
 
@@ -196,8 +143,14 @@
 			<div class="menu-sekunder-one">
 				<h4>Madame's Cacti and Succulents</h4>
 				<p>Madame's Cacti and Succulents menyediakan <br> berbagai jenis kaktus dan sukulen.</p>
-				<p>Email: <a href="mailto:gcacty@gmail.com" title="gcacty@gmail.com">gcacty@gmail.com</a></p>
-				<p>WhatsApp: <a href="mailto:+62-823-6429-9285" title="+62-823-6429-9285">+62-823-6429-9285</a></p>
+				<p>
+					<img src="image/gmail.png" alt="Logo Gmail" width="30">
+					<a href="mailto:gcacty@gmail.com" title="gcacty@gmail.com">gcacty@gmail.com</a>
+				</p>
+				<p>
+					<img src="image/whatsapp.png" alt="Logo WhatsApp" width="30">
+					<a href="mailto:+62-823-6429-9285" title="+62-823-6429-9285">+62-823-6429-9285</a>
+				</p>
 			</div>
 			<!--Start Madame's Cacti and Succulents-->
 
@@ -212,7 +165,7 @@
 						<a href="register-login.html" title="Register/Log In">Register/Log In</a>
 					</li>
 					<li>
-						<a href="produk.html" title="Product">Product</a>
+						<a href="produk.html" title="Product">Products</a>
 					</li>
 					<li>
 						<a href="pembayaran.html" title="Payment">Payment</a>
@@ -234,21 +187,21 @@
 					<li>
 						<a href="https://www.facebook.com/" title="Facebook - Madame's Cacti and Succulents">
 							<img src="image/logo-facebook.png" alt="Logo Facebook" width="30">
-							Facebook
+							Greencacty
 						</a>
 					</li>
 					<br>
 					<li>
 						<a href="http://www.instagram.com/greencacty/" title="Instagram - Madame's Cacti and Succulents">
 							<img src="image/logo-instagram.png" alt="Logo Instagram" width="30">
-							Instagram
+							@greencacty
 						</a>
 					</li>
 					<br>
 					<li>
 						<a href="http://www.twitter.com/" title="Twitter - Madame's Cacti and Succulents">
 							<img src="image/logo-twitter.png" alt="Logo Twitter" width="30">
-							Twitter
+							@greencacty
 						</a>
 					</li>
 				</ul>

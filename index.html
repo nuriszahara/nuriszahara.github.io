@@ -9,6 +9,11 @@
 	</title>
 	<meta name="description" content="Madame's Cacti and Succulents menjual berbagai jenis kaktus dan sukulen yang berlokasi di Kota Banda Aceh">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<!--Start CSS-->
 	<link rel="stylesheet" href="styles/styles.css">
 	<!--End CSS-->
@@ -16,27 +21,40 @@
 	<!--Start JS-->
 	<script src="js/function.js"></script>
 	<!--End JS-->
+
+	<!-- WhatsHelp.io widget -->
+	<script type="text/javascript">
+		(function () {
+			var options = {
+				whatsapp: "+6282364299285", // WhatsApp number
+				call_to_action: "Message us", // Call to action
+				position: "right", // Position may be 'right' or 'left'
+			};
+			var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+			var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+			s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+			var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+		})();
+	</script>
+	<!-- /WhatsHelp.io widget -->
+
 </head>
 <body>
-	<!--Start Logo-->
-	<div class="container logo">
-		<a href="index.html" title="Logo Madame's Cacti and Succlents">
-		<img src="image/logo-cacty-dua.png" alt="Gambar Logo" width="450">
-		</a>
-	</div>
-	<!--End Logo-->
-
 	<!--Start Menu Primer-->
 	<div class="container menu-primer">
 		<ul>
 			<li>
+				<img class="logo1" src="image/logo-cacty.png" alt="Gambar Logo" title="Gambar Logo" width="150">
+			</li>
+
+			<li>
 				<a href="index.html" title="Home" class="active">Home</a>
 			</li>
 			<li>
-				<a href="register-login.html" title="Register/Log In">Register/Log In</a>
+				<a href="produk.html" title="Products">Products</a>
 			</li>
 			<li>
-				<a href="produk.html" title="Product">Product</a>
+				<a href="register-login.html" title="Register/Log In">Register/Log In</a>
 			</li>
 			<li>
 				<a href="pembayaran.html" title="Payment">Payment</a>
@@ -47,22 +65,23 @@
 			<li>
 				<a href="tentang-kami.html" title="About Us">About Us</a>
 			</li>
+			<a href="#">
+				<span class="glyphicon glyphicon-shopping-cart"></span>
+			</a>
 		</ul>
 	</div>
 	<!--End Menu Primer-->
 
-	<!--Start Jumbotron-->
-	<!-- <div class="container jumbotron">
-		<h1>Welcome to Madame's Cacti and Succulents</h1>
-		<h3>Madame's Cacti and Succulents menyediakan berbagai jenis kaktus dan sukulen yang berpusat di Banda Aceh dan siap dikirimkan ke seluruh Indonesia.</h3> -->
-	</div>
-	<!--End Jumbotron-->
-
 	<!--Start Wow Effect-->
 	<div class="container">
 		<figure class="snip1543">
-			<img src="image/bg-copy.jpg" alt="background-home" />
+			<img src="image/background.jpg" alt="background-home" />
 			<figcaption>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
 				<h3>Welcome to<br>Madame's Cacti and Succulents</h3>
 				<br>
 				<p>Madame's Cacti and Succulents menyediakan berbagai jenis kaktus dan sukulen yang berpusat di Banda Aceh dan siap dikirimkan ke seluruh Indonesia.</p>
@@ -75,59 +94,54 @@
 	<!--Start Promo dan Testimoni-->
 	<div class="container">
 		<!--Start Promo-->
-		<div class="main-home-one">
-			<div class="box-heading">
-				<h4>Promo</h4>
-			</div>
-			<div class="box-isi">
-				<ul>
-					<li>[Minggu ini] Dapatkan Diskon 10% untuk pembelian di atas Rp 100.000,-</li>
-					<li>[Bulan ini] Check Out minimal 4 kali akan mendapatkan diskon 50% untuk Check Out ke 5</li>
-				</ul>
-			</div>
-		</div>
-		<!--End Promo-->
-
-		<!--Start Testimonial-->
-		<div class="main-home-two">
-			<div class="box-heading">
-				<h4>Testimonial</h4>
-			</div>
-			<div class="box-isi">
-				<blockquote  class="testimonial">
-					<p>
-						<em>Pembelian ketiga. Selalu puas berbelanja disini, kaktusnya bagus sesuai dengan foto, pengirimannya cepat.</em>
-					</p>
-					<cite>--Ningsih</cite>
-				</blockquote>
-			</div>
-		</div>
-		<!--End Testimonial-->
-	</div>
-	<!--Start Promo dan Testimoni-->
-
-	<!--Start Artikel-->
-	<div class="container">
 		<div class="main-home-one main-home-three">
 			<div class="box-heading">
-				<h4>Artikel</h4>
+				<h2>Promo Agustus</h2>
 			</div>
-			<div class="box-isi">
-				<ol>
-					<li>
-						<a href="https://www.dekoruma.com/artikel/77520/cara-merawat-kaktus-dalam-ruangan" title="5 Cara Merawat Kaktus Dalam Ruangan yang Simpel">5 Cara Merawat Kaktus Dalam Ruangan yang Simpel</a>
-					</li>
-					<li>
-						<a href="https://www.99.co/blog/indonesia/pot-kaktus/" title="8 Kreasi Pot Kaktus Dari Semen yang Lucu. Buat, Yuk!">8 Kreasi Pot Kaktus Dari Semen yang Lucu. Buat, Yuk!</a>
-					</li>
-					<li>
-						<a href="https://www.dekoruma.com/artikel/64219/jenis-kaktus-mini" title="14 Jenis Kaktus Mini yang Harus Dipunya Pecinta Tanaman">14 Jenis Kaktus Mini yang Harus Dipunya Pecinta Tanaman</a>
-					</li>
-				</ol>
+
+			<div class="card">
+				<img src="image/paket-kaktus-satu.jpg" alt="Package One" title="Package One" style="width:100%">
+				<h2>Package One</h2>
+				<p class="price"><s>IDR260K</s>    IDR 230K</p>
+				<p><button>Add to Cart</button></p>
+			</div>
+
+			<div class="card">
+				<img src="image/paket-kaktus-dua.jpg" alt="Package Two" title="Package Two" style="width:100%">
+				<h2>Package Two</h2>
+				<p class="price"><s>IDR85K</s>    IDR 75K</p>
+				<p><button>Add to Cart</button></p>
+			</div>
+
+			<div class="card">
+				<img src="image/paket-kaktus-tiga.jpg" alt="Package Three" title="Package Three" style="width:100%">
+				<h2>Package Three</h2>
+				<p class="price"><s>IDR80K</s>    IDR 70K</p>
+				<p><button>Add to Cart</button></p>
+			</div>
+
+			<div class="card">
+				<img src="image/paket-kaktus-empat.jpg" alt="Package Four" title="Package Four" style="width:100%">
+				<h2>Package Four</h2>
+				<p class="price"><s>IDR40K</s>    IDR 30K</p>
+				<p><button>Add to Cart</button></p>
 			</div>
 		</div>
 	</div>
-	<!--End Artikel-->
+	<!--End Promo-->
+
+	<!--Start DIY-->
+	<div class="container">
+		<div class="main-home-one main-home-three">
+		<div class="box-heading">
+			<h2>DIY CACTUS AND SUCCULENT</h2>
+		</div>
+			<iframe width="590" height="315" src="https://www.youtube.com/embed/ARSlCHUleME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<iframe width="590" height="315" src="https://www.youtube.com/embed/TfPcqIGUWt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	<!--End DIY-->
 
 	<!--Start Menu Sekunder-->
 	<div class="container-full menu-sekunder">
@@ -137,8 +151,14 @@
 			<div class="menu-sekunder-one">
 				<h4>Madame's Cacti and Succulents</h4>
 				<p>Madame's Cacti and Succulents menyediakan <br> berbagai jenis kaktus dan sukulen.</p>
-				<p>Email: <a href="mailto:gcacty@gmail.com" title="gcacty@gmail.com">gcacty@gmail.com</a></p>
-				<p>WhatsApp: <a href="mailto:+62-823-6429-9285" title="+62-823-6429-9285">+62-823-6429-9285</a></p>
+				<p>
+					<img src="image/gmail.png" alt="Logo Gmail" width="30">
+					<a href="mailto:gcacty@gmail.com" title="gcacty@gmail.com">gcacty@gmail.com</a>
+				</p>
+				<p>
+					<img src="image/whatsapp.png" alt="Logo WhatsApp" width="30">
+					<a href="mailto:+62-823-6429-9285" title="+62-823-6429-9285">+62-823-6429-9285</a>
+				</p>
 			</div>
 			<!--Start Madame's Cacti and Succulents-->
 
@@ -150,10 +170,10 @@
 						<a href="index.html" title="Home" class="active">Home</a>
 					</li>
 					<li>
-						<a href="register-login.html" title="Register/Log In">Register/Log In</a>
+						<a href="produk.html" title="Products">Products</a>
 					</li>
 					<li>
-						<a href="produk.html" title="Product">Product</a>
+						<a href="register-login.html" title="Register/Log In">Register/Log In</a>
 					</li>
 					<li>
 						<a href="pembayaran.html" title="Payment">Payment</a>
@@ -175,21 +195,21 @@
 					<li>
 						<a href="https://www.facebook.com/" title="Facebook - Madame's Cacti and Succulents">
 							<img src="image/logo-facebook.png" alt="Logo Facebook" width="30">
-							Facebook
+							Greencacty
 						</a>
 					</li>
 					<br>
 					<li>
 						<a href="http://www.instagram.com/greencacty/" title="Instagram - Madame's Cacti and Succulents">
 							<img src="image/logo-instagram.png" alt="Logo Instagram" width="30">
-							Instagram
+							@greencacty
 						</a>
 					</li>
 					<br>
 					<li>
 						<a href="http://www.twitter.com/" title="Twitter - Madame's Cacti and Succulents">
 							<img src="image/logo-twitter.png" alt="Logo Twitter" width="30">
-							Twitter
+							@greencacty
 						</a>
 					</li>
 				</ul>
